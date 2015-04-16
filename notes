@@ -1,0 +1,34 @@
+STEP 2 - Idea Scaffold (Notes) 
+  Output
+   invoke  active_record
+   identical    db/migrate/20150312054327_create_ideas.rb
+   identical    app/models/idea.rb
+      invoke    test_unit
+   identical      test/models/idea_test.rb
+   identical      test/fixtures/ideas.yml
+      invoke  resource_route
+       route    resources :ideas
+      invoke  scaffold_controller
+   identical    app/controllers/ideas_controller.rb
+      invoke    erb
+       exist      app/views/ideas
+   identical      app/views/ideas/index.html.erb
+   identical      app/views/ideas/edit.html.erb
+   identical      app/views/ideas/show.html.erb
+   identical      app/views/ideas/new.html.erb
+   identical      app/views/ideas/_form.html.erb
+      invoke    test_unit
+   identical      test/controllers/ideas_controller_test.rb
+      invoke    helper
+   identical      app/helpers/ideas_helper.rb
+      invoke      test_unit
+      invoke    jbuilder
+   identical      app/views/ideas/index.json.jbuilder
+   identical      app/views/ideas/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+   identical      app/assets/javascripts/ideas.coffee
+      invoke    scss
+   identical      app/assets/stylesheets/ideas.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.scss
